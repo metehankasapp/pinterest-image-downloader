@@ -96,6 +96,16 @@
         text-decoration: none;
       }
 
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .star-link {
+        color: var(--red);
+      }
+
       .hero {
         padding: 72px 0 56px;
         border-bottom: 1px solid var(--line);
@@ -163,6 +173,19 @@
       .secondary {
         border: 1px solid var(--line);
         background: #fff;
+      }
+
+      .star-note {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.45;
+      }
+
+      .star-note a {
+        color: var(--red);
+        font-weight: 800;
+        text-decoration: none;
       }
 
       .preview {
@@ -269,6 +292,10 @@
         .hero {
           padding-top: 44px;
         }
+
+        .nav-actions {
+          gap: 12px;
+        }
       }
     </style>
   </head>
@@ -279,7 +306,10 @@
           <img src="icon128.png" alt="">
           <span>PinZip Saver</span>
         </div>
-        <a class="nav-link" href="https://github.com/metehankasapp/pinterest-image-downloader">View on GitHub</a>
+        <div class="nav-actions">
+          <a class="nav-link star-link" href="https://github.com/metehankasapp/pinterest-image-downloader/stargazers">Star on GitHub</a>
+          <a class="nav-link" href="https://github.com/metehankasapp/pinterest-image-downloader">View on GitHub</a>
+        </div>
       </nav>
     </header>
 
@@ -292,8 +322,10 @@
             <p class="lead">Bulk save selected images from Pinterest boards, profiles, feeds, and search pages. PinZip Saver runs locally in your browser and exports clean ZIP files.</p>
             <div class="actions">
               <a class="button primary" href="https://github.com/metehankasapp/pinterest-image-downloader">Get the Extension</a>
+              <a class="button secondary" href="https://github.com/metehankasapp/pinterest-image-downloader/stargazers">Star on GitHub</a>
               <a class="button secondary" href="https://github.com/metehankasapp/pinterest-image-downloader#install">Install Instructions</a>
             </div>
+            <p class="star-note">If PinZip Saver saves you time, <a href="https://github.com/metehankasapp/pinterest-image-downloader/stargazers">star the project on GitHub</a> so more Pinterest users can find it.</p>
           </div>
           <div class="preview">
             <img src="social-preview.png" alt="PinZip Saver Pinterest image downloader preview">
